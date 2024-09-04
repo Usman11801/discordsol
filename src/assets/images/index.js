@@ -1,24 +1,24 @@
-import logo from "./orebiLogo.png";
+import logo from "./orebiLogo.avif";
 import logoLight from "./logoLight.png";
-import bannerImgOne from "./banner/bannerImgOne.webp";
+import bannerImgOne from "./banner/bannerImgOne.jpg";
 import bannerImgTwo from "./banner/bannerImgTwo.webp";
 import bannerImgThree from "./banner/bannerImgThree.webp";
-import saleImgOne from "./sale/saleImgOne.webp";
+import saleImgOne from "./sale/saleImageOne.jpg";
 import saleImgTwo from "./sale/saleImgTwo.webp";
-import saleImgThree from "./sale/saleImgThree.webp";
+import saleImgThree from "./sale/saleImgThree.jpg";
 // ============== Products Start here ====================
 import pdf1 from "../pdf/pdf1.pdf";
 // New Arrivals
-import newArrOne from "./products/newArrival/newArrOne.webp";
+import newArrOne from "./products/newArrival/newArrOne.jpg";
 import newArrTwo from "./products/newArrival/newArrTwo.webp";
 import newArrThree from "./products/newArrival/newArrThree.webp";
 import newArrFour from "./products/newArrival/newArrFour.webp";
 
 // Best Sellers
-import bestSellerOne from "./products/bestSeller/bestSellerOne.webp";
+import bestSellerOne from "./products/bestSeller/bestSellerOne.jpg";
 import bestSellerTwo from "./products/bestSeller/bestSellerTwo.webp";
-import bestSellerThree from "./products/bestSeller/bestSellerThree.webp";
-import bestSellerFour from "./products/bestSeller/bestSellerFour.webp";
+import bestSellerThree from "./products/bestSeller/bestSellerThree.jpeg";
+import bestSellerFour from "./products/bestSeller/bestSellerFour.jpg";
 import imprimante1 from "./products/bestSeller/imprimante1.webp";
 import imprimante2 from "./products/bestSeller/imprimante2.webp";
 import imprimante4 from "./products/bestSeller/imprimante4.webp";
@@ -30,14 +30,15 @@ import imprimante9 from "./products/bestSeller/imprimante9.webp";
 import encre1 from "./products/bestSeller/encre1.webp";
 import encre2 from "./products/bestSeller/encre2.webp";
 import encre3 from "./products/bestSeller/encre3.webp";
-import encre4 from "./products/bestSeller/encre4.webp";
+import encre4 from "./products/bestSeller/encre4.avif";
+
 import bac1 from "./products/bestSeller/bac1.webp";
-import bac2 from "./products/bestSeller/bac2.webp";
-import bac3 from "./products/bestSeller/bac3.webp";
+import bac2 from "./products/bestSeller/bac2.jpg";
+import bac3 from "./products/bestSeller/bac3.jpg";
 import bac4 from "./products/bestSeller/bac4.webp";
-import ruban1 from "./products/bestSeller/ruban1.webp";
-import ruban2 from "./products/bestSeller/ruban2.webp";
-import ruban3 from "./products/bestSeller/ruban3.webp";
+import ruban1 from "./products/bestSeller/ruban1.jpeg";
+import ruban2 from "./products/bestSeller/ruban2.jpg";
+import ruban3 from "./products/bestSeller/ruban3.jpeg";
 import ruban4 from "./products/bestSeller/ruban4.webp";
 
 // Special Offers
@@ -47,7 +48,9 @@ import spfThree from "./products/specialOffer/spfThree.webp";
 import spfFour from "./products/specialOffer/spfFour.webp";
 
 // Year Product
-import productOfTheYear from "./products/productOfTheYear.webp";
+import productOfTheYear from "./products/bestSeller/bestSellerFour.jpg";
+// import bestSellerFour from ;
+
 // ============== Products End here ======================
 import paymentCard from "./payment.png";
 import emptyCart from "../images/emptyCart.png";
@@ -56,24 +59,24 @@ import IMPRIMANTE_PANTUM_CP2200DW from "../images/products/imprimante/IMPRIMANTE
 import IMPRIMANTE_PANTUM_BM5100FDW from "../images/products/imprimante/IMPRIMANTE_PANTUM_BM5100FDW.webp";
 import IMPRIMANTE_PANTUM_BP5100DN from "../images/products/imprimante/IMPRIMANTE_PANTUM_BP5100DN.webp";
 import IMPRIMANTE_PANTUM_M6609N from "../images/products/imprimante/IMPRIMANTE_PANTUM_M6609N.webp";
-import IMPRIMANTE_PANTUM_P3300DN from "../images/products/imprimante/IMPRIMANTE_PANTUM_P3300DN.webp";
+import IMPRIMANTE_PANTUM_P3300DN from "../images/products/imprimante/IMPRIMANTE_PANTUM_P3300DN.jpg";
 import IMPRIMANTE_PANTUM_P3300DW from "../images/products/imprimante/IMPRIMANTE_PANTUM_P3300DW.webp";
-import IMPRIMANTE_PANTUM_P2509W from "../images/products/imprimante/IMPRIMANTE_PANTUM_P2509W.webp";
+import IMPRIMANTE_PANTUM_P2509W from "../images/products/imprimante/IMPRIMANTE_PANTUM_P2509W.jpg";
 import IMPRIMANTE_PANTUM_M6559N from "../images/products/imprimante/IMPRIMANTE_PANTUM_M6559N.webp";
-import IMPRIMANTE_PANTUM_P2509 from "../images/products/imprimante/IMPRIMANTE_PANTUM_P2509.webp";
+import IMPRIMANTE_PANTUM_P2509 from "../images/products/imprimante/IMPRIMANTE_PANTUM_P2509.jpg";
 
 import hp1 from "../images/products/imprimante/hp1.webp";
-import hp2 from "../images/products/imprimante/hp2.webp";
+import hp2 from "../images/products/imprimante/hp2.jpg";
 import hp3 from "../images/products/imprimante/hp3.webp";
 
 import ricoh1 from "../images/products/imprimante/ricoh1.webp";
 import ricoh2 from "../images/products/imprimante/ricoh2.webp";
-import ricoh3 from "../images/products/imprimante/ricoh3.webp";
+import ricoh3 from "../images/products/imprimante/ricoh3.jpg";
 import ricoh4 from "../images/products/imprimante/ricoh4.webp";
-import ricoh5 from "../images/products/imprimante/ricoh5.webp";
+import ricoh5 from "../images/products/imprimante/ricoh5.jpg";
 
 import espson1 from "../images/products/imprimante/espson1.webp";
-import espson2 from "../images/products/imprimante/espson2.webp";
+import espson2 from "../images/products/imprimante/espson2.jpg";
 
 export {
   logo,

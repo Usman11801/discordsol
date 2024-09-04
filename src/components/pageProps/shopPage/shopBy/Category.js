@@ -17,14 +17,17 @@ const Category = () => {
     {
       _id: 9006,
       title: "Imprimante",
+      name:""
     },
     {
       _id: 9007,
       title: "Encre",
+      name:"Samsung LED"
     },
     {
       _id: 9008,
       title: "Ruban",
+      name:"Mechanic Keyboards"
     },
     {
       _id: 9009,
@@ -38,7 +41,7 @@ const Category = () => {
 
   return (
     <div className="w-full">
-      <NavTitle title="Shop by Category" icons={true} />
+      <NavTitle title="New Arrived" icons={true} />
       <div>
         <ul className="flex flex-col gap-4 text-sm lg:text-base text-[#767676]">
           {category.map((item) => (
@@ -46,13 +49,13 @@ const Category = () => {
               key={item._id}
               className="border-b-[1px] border-b-[#F0F0F0] pb-2 flex items-center gap-2 hover:text-primeColor hover:border-gray-400 duration-300"
             >
-              <input
+            {item?.name?  <input
                 type="checkbox"
                 id={item._id}
                 checked={checkedCategorys.some((b) => b._id === item._id)}
                 onChange={() => handleToggleCategory(item)}
-              />
-              {item.title}
+              />:""}
+              {item?.name}
               {item.icons && (
                 <span
                   onClick={() => setShowSubCatOne(!showSubCatOne)}
@@ -63,7 +66,7 @@ const Category = () => {
               )}
             </li>
           ))}
-          <li onClick={() => console.log(checkedCategorys)}>test</li>
+          {/* <li onClick={() => console.log(checkedCategorys)}>test</li> */}
         </ul>
       </div>
     </div>

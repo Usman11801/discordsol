@@ -44,14 +44,14 @@ const CustomSlide = ({ Subtext, imgSrc, text, buttonLink, buttonText }) => (
         {Subtext}
       </p>
 
-      <Link to="/about">
+      <Link to="/shop">
         <button className="bg-primeColor text-white text-lg font-bodyFont w-[185px] h-[50px] hover:bg-black duration-300 font-bold">
           {buttonText}
         </button>
       </Link>
     </div>
-    <div style={{ marginLeft: "100px" }}>
-      <Image imgSrc={imgSrc} />
+    <div style={{ marginLeft: "100px",marginBottom:'7%',marginTop:'4%'}}>
+      <Image className="w-[550px] rounded-3xl" imgSrc={imgSrc} />
     </div>
   </div>
 );
@@ -152,27 +152,27 @@ const Banner = () => {
   const slides = [
     {
       imgSrc: bannerImgOne,
-      text: "Enhance Your Printing Experience",
+      text: "Enhance Your Experiance Experience with us",
       Subtext:
-        "Explore our premium printers and consumables for exceptional results",
-      buttonLink: "/offer",
+        "Explore our premium products and consumables for exceptional results",
+      buttonLink: "/shop",
       buttonText: "Shop Now",
     },
     {
       imgSrc: bannerImgOne,
-      text: "Quality Printing Solutions",
+      text: "Quality Products Solutions",
       Subtext:
-        "Discover our wide range of printers and consumables designed for professional printing needs.",
+        "Discover new products and consumables designed for professional products needs.",
       buttonLink: "/shop",
-      buttonText: "About-us",
+      buttonText: "Shop Now",
     },
     {
       imgSrc: bannerImgOne,
       text: "Efficiency Redefined",
       Subtext:
-        "Maximize productivity with our advanced printers and high-quality consumables. ",
-      buttonLink: "/contact",
-      buttonText: "Contact-us",
+        "Maximize productivity with our advanced products and high-quality consumables. ",
+      buttonLink: "/shop",
+      buttonText: "Shop Now",
     },
 
     // Add more slides as needed

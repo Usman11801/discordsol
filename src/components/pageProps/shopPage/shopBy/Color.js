@@ -34,7 +34,7 @@ const Color = () => {
 
   return (
     <div>
-      <div
+      {/* <div
         onClick={() => setShowColors(!showColors)}
         className="cursor-pointer"
       >
@@ -61,7 +61,7 @@ const Color = () => {
             ))}
           </ul>
         </motion.div>
-      )}
+      )} */}
     </div>
   );
 };

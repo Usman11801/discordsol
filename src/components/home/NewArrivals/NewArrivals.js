@@ -14,7 +14,7 @@ import SamplePrevArrow from "./SamplePrevArrow";
 const NewArrivals = () => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
@@ -54,55 +54,55 @@ const NewArrivals = () => {
           <Product
             _id="100001"
             img={newArrOne}
-            productName="Round Table Clock"
-            price="44.00"
-            color="Black"
+            productName="Classic earbirds"
+            price="5.00"
+            color="Green"
             badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="Earbirds with two mic and quality sound with the care of you ear health"
           />
         </div>
         <div className="px-2">
           <Product
             _id="100002"
             img={newArrTwo}
-            productName="Smart Watch"
-            price="250.00"
-            color="Black"
+            productName="Quad mic earbirds"
+            price="8.00"
+            color="White"
             badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="Earbirds with Quad mic and quality sound with the care of you ear health and good call experiance"
           />
         </div>
         <div className="px-2">
           <Product
             _id="100003"
             img={newArrThree}
-            productName="cloth Basket"
-            price="80.00"
-            color="Mixed"
+            productName="Head phones"
+            price="6.00"
+            color="White"
             badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="Headphones with excellent mic and quality sound with the care of you ear health and good call experiance"
           />
         </div>
         <div className="px-2">
           <Product
             _id="100004"
             img={newArrFour}
-            productName="Funny toys for babies"
-            price="60.00"
-            color="Mixed"
+            productName="Handsfree"
+            price="2.00"
+            color="grey"
             badge={false}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="Handsfree with excellent mic and quality sound with the care of you ear health and good call experiance"
           />
         </div>
         <div className="px-2">
           <Product
             _id="100005"
             img={newArrTwo}
-            productName="Funny toys for babies"
-            price="60.00"
-            color="Mixed"
+            productName="Quad mic earbirds"
+            price="8.00"
+            color="white"
             badge={false}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="Earbirds with Quad mic and quality sound with the care of you ear health and good call experiance"
           />
         </div>
       </Slider>

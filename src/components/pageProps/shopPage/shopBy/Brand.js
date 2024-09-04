@@ -15,19 +15,23 @@ const Brand = () => {
     {
       _id: 900,
       title: "Pantum",
+      name:"Headphones"
     },
     {
       _id: 901,
       title: "Hp",
+      name:"Earbuds"
     },
     {
       _id: 902,
       title: "Epson",
+      name:"Mouse"
     },
 
     {
       _id: 903,
       title: "Ricoh",
+      name:"Handsfree"
     },
   ];
 
@@ -41,7 +45,7 @@ const Brand = () => {
         onClick={() => setShowBrands(!showBrands)}
         className="cursor-pointer"
       >
-        <NavTitle title="Shop by Brand" icons={true} />
+        <NavTitle title="Filter products" icons={true} />
       </div>
       {showBrands && (
         <motion.div
@@ -61,7 +65,7 @@ const Brand = () => {
                   checked={checkedBrands.some((b) => b._id === item._id)}
                   onChange={() => handleToggleBrand(item)}
                 />
-                {item.title}
+                {item?.name}
               </li>
             ))}
           </ul>

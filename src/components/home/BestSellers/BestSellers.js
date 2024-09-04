@@ -16,38 +16,38 @@ const BestSellers = () => {
         <Product
           _id="1011"
           img={bestSellerOne}
-          productName="Flower Base"
-          price="35.00"
+          productName="Handsfree"
+          price="4.00"
           color="Blank and White"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="Headphones with excellent mic and quality sound with the care of you ear health and good call experiance"
         />
         <Product
           _id="1012"
           img={bestSellerTwo}
-          productName="New Backpack"
-          price="180.00"
+          productName="Mouse"
+          price="10.00"
           color="Gray"
           badge={false}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="Mice are known to have a pointed snout, small rounded ears, a body-length scaly tail, and a high breeding rate. The best known mouse species is the common house mouse"
         />
         <Product
           _id="1013"
           img={bestSellerThree}
-          productName="Household materials"
-          price="25.00"
-          color="Mixed"
+          productName="Keyboard"
+          price="15.00"
+          color="Grey and White"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="An input device that allows you to type letters, numbers, and symbols into your computer or other electronic device. It usually has a set of keys arranged in a specific layout, such as QWERTY or DVORAK"
         />
         <Product
           _id="1014"
           img={bestSellerFour}
-          productName="Travel Bag"
-          price="220.00"
+          productName="Usb"
+          price="9.00"
           color="Black"
           badge={false}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="A set of connectivity specifications developed in collaboration with industry leaders"
         />
       </div>
     </div>

@@ -13,15 +13,16 @@ const ProductInfo = ({ productInfo }) => {
       return null; // or handle accordingly if product.des is not defined
     }
 
-    const description = productInfo.des.split(/:(.*?)-/).map((part, index) => {
-      return (
-        <span key={index} style={index % 2 === 1 ? highlightStyle : {}}>
-          {part}
-        </span>
-      );
-    });
+    // const description =
+    //  productInfo.des.split(/:(.*?)-/).map((part, index) => {
+    //   return (
+    //     <span key={index} style={index % 2 === 1 ? highlightStyle : {}}>
+    //       {part}
+    //     </span>
+    //   );
+    // });
 
-    return <>{description}</>;
+    return <>Experience the perfect blend of style, comfort, and functionality with our premium range of electronic accessories. Whether you're looking for high-quality keyboards, mice, headphones, or earbuds, our products are designed to elevate your everyday digital experience. Crafted with precision and attention to detail, each item ensures seamless connectivity, superior performance, and lasting durability. Upgrade your tech collection with accessories that combine cutting-edge technology with sleek design.</>;
   };
   const dispatch = useDispatch();
   return (
@@ -29,9 +30,11 @@ const ProductInfo = ({ productInfo }) => {
       <h2 className="text-4xl font-semibold">{productInfo.productName}</h2>
       <p className="text-2xl font-semibold">
         {productInfo.price} Dt
-        <span className="text-xl font-semibold line-through ml-2">540</span>
+        <span className="text-xl font-semibold line-through ml-2">
+        {parseFloat(productInfo.price) + 8}
+</span>
         <span className="text-xs ml-2 inline-flex items-center px-3 py-1 rounded-full bg-green-600 text-white">
-          Save 100
+          Save 8.00
         </span>
       </p>
       <hr />
@@ -109,10 +112,10 @@ const ProductInfo = ({ productInfo }) => {
       >
         Add to Cart
       </button>
-      <p className="font-normal text-sm">
+      {/* <p className="font-normal text-sm">
         <span className="text-base font-medium"> Categories:</span> Spring
         collection, Streetwear, Women Tags: featured SKU: N/A
-      </p>
+      </p> */}
     </div>
   );
 };
