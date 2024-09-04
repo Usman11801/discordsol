@@ -31,8 +31,8 @@ const Header = () => {
       <nav className="h-full px-4 max-w-container mx-auto relative">
         <Flex className="flex items-center justify-between h-full">
           <Link to="/">
-            <div style={{borderRadius:'100px',width:'70%'}}>
-              <Image className="w-32 object-cover" imgSrc={logo} />
+            <div style={{borderRadius:'100px',width:'50%'}}>
+              <Image className="w-32 object-cover rounded-full" imgSrc={logo} />
             </div>
           </Link>
           <div>
