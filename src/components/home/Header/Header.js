@@ -70,11 +70,11 @@ const Header = () => {
                   className="w-[80%] h-full relative"
                 >
                   <div className="w-full h-full bg-primeColor p-6">
-                    <img
+                    {/* <img
                       className="w-28 mb-6"
                       src={logoLight}
                       alt="logoLight"
-                    />
+                    /> */}
                     <ul className="text-gray-200 flex flex-col gap-2">
                       {navBarList.map((item) => (
                         <li
@@ -93,13 +93,13 @@ const Header = () => {
                     </ul>
                     <div className="mt-4">
                       <h1
-                        onClick={() => setCategory(!category)}
+                        // onClick={() => setCategory(!category)}
                         className="flex justify-between text-base cursor-pointer items-center font-titleFont mb-2"
                       >
-                        Shop by Category{" "}
-                        <span className="text-lg">{category ? "-" : "+"}</span>
+                        {/* Shop by Category{" "} */}
+                        {/* <span className="text-lg">{category ? "-" : "+"}</span> */}
                       </h1>
-                      {category && (
+                      {/* {category && (
                         <motion.ul
                           initial={{ y: 15, opacity: 0 }}
                           animate={{ y: 0, opacity: 1 }}
@@ -112,17 +112,17 @@ const Header = () => {
                           <li className="headerSedenavLi">Electronics</li>
                           <li className="headerSedenavLi">Others</li>
                         </motion.ul>
-                      )}
+                      )} */}
                     </div>
                     <div className="mt-4">
-                      <h1
+                      {/* <h1
                         onClick={() => setBrand(!brand)}
                         className="flex justify-between text-base cursor-pointer items-center font-titleFont mb-2"
                       >
                         Shop by Brand
                         <span className="text-lg">{brand ? "-" : "+"}</span>
-                      </h1>
-                      {brand && (
+                      </h1> */}
+                      {/* {brand && (
                         <motion.ul
                           initial={{ y: 15, opacity: 0 }}
                           animate={{ y: 0, opacity: 1 }}
@@ -135,7 +135,7 @@ const Header = () => {
                           <li className="headerSedenavLi">Electronics</li>
                           <li className="headerSedenavLi">Others</li>
                         </motion.ul>
-                      )}
+                      )} */}
                     </div>
                   </div>
                   <span

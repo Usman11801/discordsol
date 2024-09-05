@@ -698,7 +698,7 @@ export const paginationItems = [
   {
     _id: "209",
     img: encre1,
-    productName: "Samsung LED 43''",
+    productName: "LED 43'' 778hn",
     price: "400.00",
     color: "Mixed",
     badge: true,
@@ -708,7 +708,7 @@ export const paginationItems = [
   {
     _id: "210",
     img: encre2,
-    productName: "Samsung LED 50''",
+    productName: "LED 50'' 755hn",
     price: "700.00",
     color: "Black",
     badge: true,
@@ -719,7 +719,7 @@ export const paginationItems = [
   {
     _id: "211",
     img: encre3,
-    productName: "Samsung LED 78''",
+    productName: "LED 78'' 735hn",
     price: "1000.00",
     color: "Mixed",
     badge: true,
@@ -729,7 +729,7 @@ export const paginationItems = [
   {
     _id: "212",
     img: encre4,
-    productName: "Samsung LED 65''",
+    productName: "LED 65'' 834hn",
     price: "800.00",
     color: "Black",
     badge: true,

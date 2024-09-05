@@ -22,12 +22,12 @@ const Category = () => {
     {
       _id: 9007,
       title: "Encre",
-      name:"Samsung LED"
+      name:"LED"
     },
     {
       _id: 9008,
       title: "Ruban",
-      name:"Mechanic Keyboards"
+      name:"Keyboards"
     },
     {
       _id: 9009,

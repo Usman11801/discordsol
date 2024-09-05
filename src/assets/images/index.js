@@ -32,13 +32,13 @@ import encre2 from "./products/bestSeller/encre2.webp";
 import encre3 from "./products/bestSeller/encre3.webp";
 import encre4 from "./products/bestSeller/encre4.avif";
 
-import bac1 from "./products/bestSeller/bac1.webp";
+import bac1 from "./products/bestSeller/bac1.avif";
 import bac2 from "./products/bestSeller/bac2.jpg";
 import bac3 from "./products/bestSeller/bac3.jpg";
-import bac4 from "./products/bestSeller/bac4.webp";
-import ruban1 from "./products/bestSeller/ruban1.jpeg";
+import bac4 from "./products/bestSeller/bac4.jpg";
+import ruban1 from "./products/bestSeller/ruban1.jpg";
 import ruban2 from "./products/bestSeller/ruban2.jpg";
-import ruban3 from "./products/bestSeller/ruban3.jpeg";
+import ruban3 from "./products/bestSeller/ruban3.webp";
 import ruban4 from "./products/bestSeller/ruban4.webp";
 
 // Special Offers
