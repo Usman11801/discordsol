@@ -12,7 +12,7 @@ const FooterBottom = () => {
           Copyright 2024 | DiscordSolutions shopping | All Rights Reserved |
           <a href="https://reactbd.com/" target="_blank" rel="noreferrer">
             <span className="ml-1 font-medium group-hover:text-primeColor">
-              Powered by Muhammad Usman
+              Powered by DiscordSolutions LLC
             </span>
           </a>
         </p>
