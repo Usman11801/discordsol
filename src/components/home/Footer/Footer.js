@@ -4,6 +4,7 @@ import { FaFacebook, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 import FooterListTitle from "./FooterListTitle";
 import { paymentCard } from "../../../assets/images";
 import Image from "../../designLayouts/Image";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [emailInfo, setEmailInfo] = useState("");
@@ -97,8 +98,15 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <FooterListTitle title="Extra taxes" />
+          <FooterListTitle title="Contact US" />
           <ul className="flex flex-col gap-2">
+          {/* <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <p style={{fontSize: '1.1rem', 
+       color: '#007bff', 
+       textDecoration: 'underline',
+       cursor:'pointer'
+       }}><Link to="/contact" >Contact Us</Link></p>
+            </li> */}
             {/* <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Profile
             </li>
@@ -112,7 +120,20 @@ const Footer = () => {
               Account Details
             </li> */}
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              No hidden charges
+            <a style={{ 
+              marginLeft:'-20%',
+       fontSize: '1.1rem', 
+       color: '#007bff', 
+       textDecoration: 'none', 
+       fontWeight: '500',
+     }}
+     onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
+     onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
+       href="https://mail.google.com/mail/?view=cm&fs=1&to=support@discordsolutions.co" target="_blank" rel="noopener noreferrer">support@discordsolutions.co</a>
+
+            </li>
+            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <p>+1 (815) 687‑5280</p>
             </li>
           </ul>
         </div>
