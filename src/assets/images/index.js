@@ -70,8 +70,8 @@ import hp2 from "../images/products/imprimante/hp2.jpg";
 import hp3 from "../images/products/imprimante/hp3.webp";
 
 import ricoh1 from "../images/products/imprimante/ricoh1.webp";
-import ricoh2 from "../images/products/imprimante/ricoh2.webp";
-import ricoh3 from "../images/products/imprimante/ricoh3.jpg";
+import ricoh2 from "../images/products/imprimante/ricoh2.jpg";
+import ricoh3 from "../images/products/imprimante/ricoh3.webp";
 import ricoh4 from "../images/products/imprimante/ricoh4.webp";
 import ricoh5 from "../images/products/imprimante/ricoh5.jpg";
 
