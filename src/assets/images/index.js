@@ -58,7 +58,7 @@ import emptyCart from "../images/emptyCart.png";
 import IMPRIMANTE_PANTUM_CP2200DW from "../images/products/imprimante/IMPRIMANTE_PANTUM_CP2200DW.webp";
 import IMPRIMANTE_PANTUM_BM5100FDW from "../images/products/imprimante/IMPRIMANTE_PANTUM_BM5100FDW.webp";
 import IMPRIMANTE_PANTUM_BP5100DN from "../images/products/imprimante/IMPRIMANTE_PANTUM_BP5100DN.webp";
-import IMPRIMANTE_PANTUM_M6609N from "../images/products/imprimante/IMPRIMANTE_PANTUM_M6609N.webp";
+import IMPRIMANTE_PANTUM_M6609N from "../images/products/imprimante/IMPRIMANTE_PANTUM_M6609N.jpg";
 import IMPRIMANTE_PANTUM_P3300DN from "../images/products/imprimante/IMPRIMANTE_PANTUM_P3300DN.jpg";
 import IMPRIMANTE_PANTUM_P3300DW from "../images/products/imprimante/IMPRIMANTE_PANTUM_P3300DW.webp";
 import IMPRIMANTE_PANTUM_P2509W from "../images/products/imprimante/IMPRIMANTE_PANTUM_P2509W.jpg";
