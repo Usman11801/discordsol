@@ -32,6 +32,11 @@ const Brand = () => {
       title: "Ricoh",
       name: "Handsfree",
     },
+    // {
+    //   _id: 904,
+    //   title: "Usb",
+    //   name: "Usb",
+    // },
   ];
 
   // Extract query params from the URL

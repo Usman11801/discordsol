@@ -14,7 +14,7 @@ const About = () => {
       <Breadcrumbs title="About" prevLocation={prevLocation} />
       <div className="pb-10">
         <h1 className="max-w-[600px] text-base text-lightText mb-2">
-          <span className="text-primeColor font-semibold text-lg">Orebi</span>{" "}
+          <span className="text-primeColor font-semibold text-lg">Discord solutions</span>{" "}
           is a premier destination for all your electronic needs, offering a
           curated selection of top-quality products designed to enhance your
           digital experience. Our mission is to bring the latest in technology
@@ -22,7 +22,7 @@ const About = () => {
           functionality, and innovation.
         </h1>
         <p className="text-base text-lightText mb-4">
-          At Orebi, we understand the importance of reliable and efficient tools
+          At DiscordSolutions, we understand the importance of reliable and efficient tools
           in your everyday life. Whether you're working from home, gaming with
           friends, or simply enjoying music on the go, our range of
           products—including keyboards, mice, headphones, and handsfree
@@ -39,7 +39,7 @@ const About = () => {
           products that you can trust.
         </p>
         <p className="text-base text-lightText mb-4">
-          But Orebi is more than just a store—it's a community of tech
+          But DiscordSolutions is more than just a store—it's a community of tech
           enthusiasts who share a passion for innovation and a love for
           well-designed products. We strive to provide our customers with an
           exceptional shopping experience, from the moment you browse our
@@ -50,7 +50,7 @@ const About = () => {
         </p>
         <p className="text-base text-lightText mb-4">
           Join us on this journey of discovery and find the perfect tools to
-          elevate your digital lifestyle. At Orebi, we're not just selling
+          elevate your digital lifestyle. At DiscordSolutions, we're not just selling
           products—we're creating experiences that connect people with the
           technology they love. Explore our collection today and see how we can
           help you make the most of your digital world.
