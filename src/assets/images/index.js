@@ -15,7 +15,7 @@ import newArrThree from "./products/newArrival/newArrThree.jpeg";
 import newArrFour from "./products/newArrival/newArrFour.webp";
 
 // Best Sellers
-import bestSellerOne from "./products/bestSeller/bestSellerOne.jpg";
+import bestSellerOne from "./products/bestSeller/bestSellerOne.webp";
 import bestSellerTwo from "./products/bestSeller/bestSellerTwo.jpg";
 import bestSellerThree from "./products/bestSeller/bestSellerThree.jpeg";
 import bestSellerFour from "./products/bestSeller/bestSellerFour.jpg";
@@ -57,7 +57,7 @@ import emptyCart from "../images/emptyCart.png";
 
 import IMPRIMANTE_PANTUM_CP2200DW from "../images/products/imprimante/IMPRIMANTE_PANTUM_CP2200DW.webp";
 import IMPRIMANTE_PANTUM_BM5100FDW from "../images/products/imprimante/IMPRIMANTE_PANTUM_BM5100FDW.webp";
-import IMPRIMANTE_PANTUM_BP5100DN from "../images/products/imprimante/IMPRIMANTE_PANTUM_BP5100DN.jpg";
+import IMPRIMANTE_PANTUM_BP5100DN from "../images/products/imprimante/IMPRIMANTE_PANTUM_BP5100DN.webp";
 import IMPRIMANTE_PANTUM_M6609N from "../images/products/imprimante/IMPRIMANTE_PANTUM_M6609N.jpg";
 import IMPRIMANTE_PANTUM_P3300DN from "../images/products/newArrival/newArrThree.jpeg";
 import IMPRIMANTE_PANTUM_P3300DW from "../images/products/imprimante/IMPRIMANTE_PANTUM_P3300DW.webp";
@@ -72,7 +72,7 @@ import hp3 from "../images/products/imprimante/hp3.webp";
 import ricoh1 from "../images/products/imprimante/ricoh1.jpeg";
 import ricoh2 from "../images/products/imprimante/ricoh2.jpeg";
 import ricoh3 from "../images/products/imprimante/ricoh3.webp";
-import ricoh4 from "../images/products/bestSeller/bestSellerOne.jpg";
+import ricoh4 from "../images/products/bestSeller/bestSellerOne.webp";
 import ricoh5 from "../images/products/imprimante/ricoh5.jpg";
 
 import espson1 from "../images/products/imprimante/espson1.jpg";
