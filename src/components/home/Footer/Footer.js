@@ -4,12 +4,13 @@ import { FaFacebook, FaYoutube, FaLinkedin, FaGithub } from "react-icons/fa";
 import FooterListTitle from "./FooterListTitle";
 import { paymentCard } from "../../../assets/images";
 import Image from "../../designLayouts/Image";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const [emailInfo, setEmailInfo] = useState("");
   const [subscription, setSubscription] = useState(false);
   const [errMsg, setErrMsg] = useState("");
+  const navigate = useNavigate();
 
   const emailValidation = () => {
     return String(emailInfo)
@@ -28,48 +29,36 @@ const Footer = () => {
       setEmailInfo("");
     }
   };
+
+  const handleCategoryClick = (category) => {
+    navigate({
+      pathname: "/shop",
+      search: `?category=${category}`, // Add query param
+    });
+  };
+
   return (
     <div className="w-full bg-[#F5F5F3] py-20">
-      <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2  xl:grid-cols-6 px-4 gap-10">
+      <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 px-4 gap-10">
         <div className="col-span-2">
-          <FooterListTitle title=" More about DiscordSolutions Electronics Shop" />
+          <FooterListTitle title="More about DiscordSolutions Electronics Shop" />
           <div className="flex flex-col gap-6">
             <p className="text-base w-full xl:w-[80%]">
-            HyperSound Electronics offers premium tech accessories, including advanced gaming mice, ergonomic keyboards, and high-quality earbuds and handsfree devices. Experience top-tier performance and sleek design with every product.
+              HyperSound Electronics offers premium tech accessories, including advanced gaming mice, ergonomic keyboards, and high-quality earbuds and handsfree devices. Experience top-tier performance and sleek design with every product.
             </p>
             <ul className="flex items-center gap-2">
-              <a
-                href="https://www.youtube.com"
-                target="_blank"
-                rel="noreferrer"
-              >
+              {/* Social Media Icons */}
+              <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaYoutube />
                 </li>
               </a>
-              {/* <a
-                href="https://github.com/noorjsdivs"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
-                  <FaGithub />
-                </li>
-              </a> */}
-              <a
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaFacebook />
                 </li>
               </a>
-              <a
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaLinkedin />
                 </li>
@@ -77,66 +66,70 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+
         <div>
           <FooterListTitle title="Shop" />
           <ul className="flex flex-col gap-2">
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Keyboards
+            <li
+              onClick={() => handleCategoryClick("Keyboards")}
+              className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
+            >
+              {/* Keyboards */}
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li
+              onClick={() => handleCategoryClick("Mouse")}
+              className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
+            >
               Mouse
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li
+              onClick={() => handleCategoryClick("Handsfree")}
+              className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
+            >
               Handsfree
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Headphoes
+            <li
+              onClick={() => handleCategoryClick("Headphones")}
+              className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
+            >
+              Headphones
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li
+              onClick={() => handleCategoryClick("Earbuds")}
+              className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
+            >
               Earbuds
             </li>
           </ul>
         </div>
+
         <div>
           <FooterListTitle title="Contact US" />
           <ul className="flex flex-col gap-2">
-          {/* <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-            <p style={{fontSize: '1.1rem', 
-       color: '#007bff', 
-       textDecoration: 'underline',
-       cursor:'pointer'
-       }}><Link to="/contact" >Contact Us</Link></p>
-            </li> */}
-            {/* <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Profile
+            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+              <a
+                style={{
+                  marginLeft: "-20%",
+                  fontSize: "1.1rem",
+                  color: "#007bff",
+                  textDecoration: "none",
+                  fontWeight: "500",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
+                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=support@discordsolutions.co"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                support@discordsolutions.co
+              </a>
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Orders
-            </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Addresses
-            </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Account Details
-            </li> */}
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-            <a style={{ 
-              marginLeft:'-20%',
-       fontSize: '1.1rem', 
-       color: '#007bff', 
-       textDecoration: 'none', 
-       fontWeight: '500',
-     }}
-     onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
-     onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
-       href="https://mail.google.com/mail/?view=cm&fs=1&to=support@discordsolutions.co" target="_blank" rel="noopener noreferrer">support@discordsolutions.co</a>
-
-            </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-            <p>+1 (815) 687‑5280</p>
+              <p>+1 (815) 687‑5280</p>
             </li>
           </ul>
         </div>
+
         <div className="col-span-2 flex flex-col items-center w-full px-4">
           <FooterListTitle title="Subscribe to our newsletter." />
           <div className="w-full">
@@ -176,11 +169,8 @@ const Footer = () => {
                 </button>
               </div>
             )}
-
             <Image
-              className={`w-[80%] lg:w-[60%] mx-auto ${
-                subscription ? "mt-2" : "mt-6"
-              }`}
+              className={`w-[80%] lg:w-[60%] mx-auto ${subscription ? "mt-2" : "mt-6"}`}
               imgSrc={paymentCard}
             />
           </div>

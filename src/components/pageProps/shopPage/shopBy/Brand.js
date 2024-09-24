@@ -1,39 +1,52 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import NavTitle from "./NavTitle";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleBrand } from "../../../../redux/orebiSlice";
+import { useLocation } from "react-router-dom"; // Import useLocation
 
 const Brand = () => {
   const [showBrands, setShowBrands] = useState(true);
-  const checkedBrands = useSelector(
-    (state) => state.orebiReducer.checkedBrands
-  );
+  const checkedBrands = useSelector((state) => state.orebiReducer.checkedBrands);
   const dispatch = useDispatch();
+  const location = useLocation(); // Get the current location to access query params
 
   const brands = [
     {
       _id: 900,
       title: "Pantum",
-      name:"Headphones"
+      name: "Headphones",
     },
     {
       _id: 901,
       title: "Hp",
-      name:"Earbuds"
+      name: "Earbuds",
     },
     {
       _id: 902,
       title: "Epson",
-      name:"Mouse"
+      name: "Mouse",
     },
-
     {
       _id: 903,
       title: "Ricoh",
-      name:"Handsfree"
+      name: "Handsfree",
     },
   ];
+
+  // Extract query params from the URL
+  const queryParams = new URLSearchParams(location.search);
+  const selectedBrand = queryParams.get("category");
+
+  // Automatically check the checkbox if the category is in query params
+  useEffect(() => {
+    if (selectedBrand) {
+      const matchedBrand = brands.find((item) => item.name === selectedBrand);
+      if (matchedBrand && !checkedBrands.some((b) => b._id === matchedBrand._id)) {
+        dispatch(toggleBrand(matchedBrand)); // Toggle the brand if it's in the query params
+      }
+    }
+  }, [selectedBrand, brands, checkedBrands, dispatch]);
 
   const handleToggleBrand = (brand) => {
     dispatch(toggleBrand(brand));
@@ -41,10 +54,7 @@ const Brand = () => {
 
   return (
     <div>
-      <div
-        onClick={() => setShowBrands(!showBrands)}
-        className="cursor-pointer"
-      >
+      <div onClick={() => setShowBrands(!showBrands)} className="cursor-pointer">
         <NavTitle title="Filter products" icons={true} />
       </div>
       {showBrands && (
