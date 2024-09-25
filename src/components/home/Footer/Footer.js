@@ -133,9 +133,9 @@ const Footer = () => {
         <div className="col-span-2 flex flex-col items-center w-full px-4">
           <FooterListTitle title="Subscribe to our newsletter." />
           <div className="w-full">
-            <p className="text-center mb-4">
+            {/* <p className="text-center mb-4">
               A at pellentesque et mattis porta enim elementum.
-            </p>
+            </p> */}
             {subscription ? (
               <motion.p
                 initial={{ x: 20, opacity: 0 }}

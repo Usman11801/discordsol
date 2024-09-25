@@ -3,7 +3,7 @@ import logoLight from "./logoLight.png";
 import bannerImgOne from "./banner/bannerImgOne.jpg";
 import bannerImgTwo from "./banner/bannerImgTwo.webp";
 import bannerImgThree from "./banner/bannerImgThree.webp";
-import saleImgOne from "./sale/saleImageOne.jpg";
+import saleImgOne from "./sale/saleImgOne.jpg";
 import saleImgTwo from "./sale/saleImgTwo.webp";
 import saleImgThree from "./sale/saleImgThree.jpg";
 // ============== Products Start here ====================
@@ -60,7 +60,7 @@ import IMPRIMANTE_PANTUM_BM5100FDW from "../images/products/imprimante/IMPRIMANT
 import IMPRIMANTE_PANTUM_BP5100DN from "../images/products/imprimante/IMPRIMANTE_PANTUM_BP5100DN.webp";
 import IMPRIMANTE_PANTUM_M6609N from "../images/products/imprimante/IMPRIMANTE_PANTUM_M6609N.jpg";
 import IMPRIMANTE_PANTUM_P3300DN from "../images/products/newArrival/newArrThree.jpeg";
-import IMPRIMANTE_PANTUM_P3300DW from "../images/products/imprimante/IMPRIMANTE_PANTUM_P3300DW.webp";
+import IMPRIMANTE_PANTUM_P3300DW from "../images/products/imprimante/IMPRIMANTE_PANTUM_P3300DW.png";
 import IMPRIMANTE_PANTUM_P2509W from "../images/products/imprimante/IMPRIMANTE_PANTUM_P2509W.jpg";
 import IMPRIMANTE_PANTUM_M6559N from "../images/products/imprimante/IMPRIMANTE_PANTUM_M6559N.webp";
 import IMPRIMANTE_PANTUM_P2509 from "../images/products/imprimante/IMPRIMANTE_PANTUM_P2509.jpg";
