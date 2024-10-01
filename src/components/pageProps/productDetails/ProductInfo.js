@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/orebiSlice";
 
-const ProductInfo = ({ productInfo }) => {
+const ProductInfo = ({ productInfo }) => { // Added userId as a prop
   const [hoveredStars, setHoveredStars] = useState(0);
-  const [selectedStars, setSelectedStars] = useState(0); // For persistent selection
+  const [selectedStars, setSelectedStars] = useState(0);
 
   const dispatch = useDispatch();
 
   const highlightStyle = {
-    color: "#d0121a", // Change this to the desired color
-    fontWeight: "bold", // Change this to the desired font weight
+    color: "#d0121a",
+    fontWeight: "bold",
   };
 
   const renderDescription = () => {
@@ -29,8 +29,34 @@ const ProductInfo = ({ productInfo }) => {
     setHoveredStars(0);
   };
 
-  const handleClick = (index) => {
+  const handleClick = async (index) => {
     setSelectedStars(index);
+    
+    // Call the review API
+    const token = localStorage.getItem("accessToken"); // Get the access token from local storage
+    const productId = productInfo._id; // Assuming the product ID is stored in productInfo._id
+    const rating = index; // The selected star rating
+
+    try {
+      const userId = localStorage.getItem("userId");
+      const response = await fetch(`${process.env.REACT_APP_BASE_URL}api/product/review`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`, // Include token in Authorization header
+        },
+        body: JSON.stringify({ productId, userId, rating }), // Send the productId, userId, and rating in the request body
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit review");
+      }
+
+      const data = await response.json();
+      console.log("Review submitted successfully:", data);
+    } catch (error) {
+      console.error("Error submitting review:", error);
+    }
   };
 
   const renderStars = () => {
@@ -86,7 +112,7 @@ const ProductInfo = ({ productInfo }) => {
         onClick={() =>
           dispatch(
             addToCart({
-              _id: productInfo.id,
+              _id: productInfo._id,
               name: productInfo.productName,
               quantity: 1,
               image: productInfo.img,

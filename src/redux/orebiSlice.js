@@ -6,6 +6,7 @@ const initialState = {
   products: [],
   checkedBrands: [],
   checkedCategorys: [],
+  subtotal: 0,
 };
 
 export const orebiSlice = createSlice({
@@ -53,7 +54,11 @@ export const orebiSlice = createSlice({
     },
     resetCart: (state) => {
       state.products = [];
+      state.subtotal = 0;
       // Dispatch a success toast
+    },
+    setSubtotal: (state, action) => {
+      state.subtotal = action.payload;
     },
 
     toggleBrand: (state, action) => {
@@ -96,5 +101,6 @@ export const {
   resetCart,
   toggleBrand,
   toggleCategory,
+  setSubtotal
 } = orebiSlice.actions;
 export default orebiSlice.reducer;

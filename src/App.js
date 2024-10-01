@@ -24,6 +24,11 @@ import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Shop from "./pages/Shop/Shop";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { loadStripe } from "@stripe/stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+
+const stripePromise = loadStripe("pk_test_51NBYcKFAJ57FpFjHclFsyfkGvfPWze3dCnuUbsZV6QilKhLnpEYYqAfndJA1O06M1huDfTeBJyAa73mvA9TPA6lr00wh2IRKWY"); // Replace with your public key
+
 
 const Layout = () => {
   return (
@@ -75,7 +80,9 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div className="font-bodyFont">
+      <Elements stripe={stripePromise}>
       <RouterProvider router={router} />
+      </Elements>
     </div>
   );
 }

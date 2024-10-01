@@ -21,7 +21,9 @@ const Product = (props) => {
   const navigate = useNavigate();
   const productItem = props;
   const handleProductDetails = () => {
+    console.log("Clicked product details>>>>>>>>>>>:", productItem);
     navigate(`/product/${rootId}`, {
+      
       state: {
         item: productItem,
       },

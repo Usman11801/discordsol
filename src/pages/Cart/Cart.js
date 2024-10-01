@@ -3,23 +3,26 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
-import { resetCart } from "../../redux/orebiSlice";
+import { resetCart ,setSubtotal} from "../../redux/orebiSlice";
 import { emptyCart } from "../../assets/images/index";
 import ItemCard from "./ItemCard";
 
 const Cart = () => {
   const dispatch = useDispatch();
   const products = useSelector((state) => state.orebiReducer.products);
-  const [totalAmt, setTotalAmt] = useState("");
+
+
+  const [totalAmt, setTotalAmt] = useState(0);
   const [shippingCharge, setShippingCharge] = useState("");
   useEffect(() => {
     let price = 0;
-    products.map((item) => {
+    products.forEach((item) => {
       price += item.price * item.quantity;
-      return price;
     });
     setTotalAmt(price);
-  }, [products]);
+    dispatch(setSubtotal(price));  // Dispatch subtotal
+  }, [products, dispatch]);
+
   useEffect(() => {
     if (totalAmt <= 200) {
       setShippingCharge(30);
@@ -81,13 +84,13 @@ const Cart = () => {
                 <p className="flex items-center justify-between border-[1px] border-gray-400 border-b-0 py-1.5 text-lg px-4 font-medium">
                   Shipping Charge
                   <span className="font-semibold tracking-wide font-titleFont">
-                    ${shippingCharge}
+                    Free
                   </span>
                 </p>
                 <p className="flex items-center justify-between border-[1px] border-gray-400 py-1.5 text-lg px-4 font-medium">
                   Total
                   <span className="font-bold tracking-wide text-lg font-titleFont">
-                    ${totalAmt + shippingCharge}
+                   ${totalAmt}
                   </span>
                 </p>
               </div>
