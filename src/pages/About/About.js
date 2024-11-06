@@ -6,7 +6,7 @@ const About = () => {
   const location = useLocation();
   const [prevLocation, setPrevLocation] = useState("");
   useEffect(() => {
-    setPrevLocation(location.state.data);
+    setPrevLocation(location.state?.data || "");
   }, [location]);
 
   return (
@@ -14,64 +14,26 @@ const About = () => {
       <Breadcrumbs title="About" prevLocation={prevLocation} />
       <div className="pb-10">
         <h1 className="max-w-[600px] text-base text-lightText mb-2">
-          <span className="text-primeColor font-semibold text-lg">Discord solutions</span>{" "}
-          is a premier destination for all your electronic needs, offering a
-          curated selection of top-quality products designed to enhance your
-          digital experience. Our mission is to bring the latest in technology
-          to your doorstep, with a focus on products that combine style,
-          functionality, and innovation.
+          <span className="text-primeColor font-semibold text-lg">Discord Solutions</span> is your trusted partner in the digital world, specializing in top-notch mobile and web application development and comprehensive digital marketing services.
         </h1>
         <p className="text-base text-lightText mb-4">
-          At DiscordSolutions, we understand the importance of reliable and efficient tools
-          in your everyday life. Whether you're working from home, gaming with
-          friends, or simply enjoying music on the go, our range of
-          products—including keyboards, mice, headphones, and handsfree
-          earbuds—are crafted to meet the highest standards of performance and
-          durability. We believe in offering products that not only meet your
-          technical requirements but also reflect your personal style.
+          At Discord Solutions, we are committed to transforming your ideas into powerful digital solutions. Our expert team delivers custom mobile and web applications tailored to meet your business objectives, utilizing the latest frameworks and technologies like ReactJS, NodeJS, Angular, and React Native.
         </p>
         <p className="text-base text-lightText mb-4">
-          Our commitment to quality is evident in every product we offer. Each
-          item in our collection is carefully selected for its superior
-          craftsmanship and cutting-edge technology, ensuring that you receive
-          nothing but the best. We collaborate with leading brands and
-          manufacturers who share our vision of excellence, bringing you
-          products that you can trust.
+          Our digital marketing services are designed to help your business grow in the online space. From SEO and content marketing to social media management, we provide strategies that enhance visibility, engagement, and customer loyalty.
         </p>
         <p className="text-base text-lightText mb-4">
-          But DiscordSolutions is more than just a store—it's a community of tech
-          enthusiasts who share a passion for innovation and a love for
-          well-designed products. We strive to provide our customers with an
-          exceptional shopping experience, from the moment you browse our
-          website to the moment your order arrives at your door. Our
-          user-friendly platform makes it easy to find exactly what you're
-          looking for, and our dedicated customer service team is always here to
-          help with any questions or concerns.
+          We believe in building strong, lasting partnerships with our clients. By combining innovative technology with a customer-centric approach, Discord Solutions is here to support your journey toward digital transformation.
         </p>
         <p className="text-base text-lightText mb-4">
-          Join us on this journey of discovery and find the perfect tools to
-          elevate your digital lifestyle. At DiscordSolutions, we're not just selling
-          products—we're creating experiences that connect people with the
-          technology they love. Explore our collection today and see how we can
-          help you make the most of your digital world.
+          Discover how we can drive your business forward. Let Discord Solutions be your go-to resource for cutting-edge mobile and web applications and effective digital marketing that amplifies your brand’s online presence.
         </p>
         <div className="mt-6 flex flex-col sm:flex-row items-center">
           <Link to="/shop">
             <button className="w-52 h-10 bg-primeColor text-white hover:bg-black duration-300">
-              Continue Shopping
+              Explore Services
             </button>
           </Link>
-          {/* <Link
-            to="/contact"
-          >
-            <button
-            className="w-52 h-10 bg-white text-primeColor border-2 border-primeColor hover:bg-black hover:text-white duration-300 mt-4 sm:mt-0 sm:ml-4 flex justify-center items-center"
-            
-            >
-            Contact Us
-            </button>
-            
-          </Link> */}
         </div>
       </div>
     </div>

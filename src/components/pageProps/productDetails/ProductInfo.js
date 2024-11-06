@@ -18,7 +18,7 @@ const ProductInfo = ({ productInfo }) => { // Added userId as a prop
       return null;
     }
 
-    return <>Experience the perfect blend of style, comfort, and functionality with our premium range of electronic accessories. Whether you're looking for high-quality keyboards, mice, headphones, or earbuds, our products are designed to elevate your everyday digital experience. Crafted with precision and attention to detail, each item ensures seamless connectivity, superior performance, and lasting durability. Upgrade your tech collection with accessories that combine cutting-edge technology with sleek design.</>;
+    return <>Your trusted partner for web & mobile app development and digital marketing. We specialize in creating custom solutions using the latest technologies like ReactJS, NodeJS, and React Native. Let us help you build engaging digital experiences and boost your online presence!</>;
   };
 
   const handleMouseEnter = (index) => {
@@ -104,9 +104,9 @@ const ProductInfo = ({ productInfo }) => { // Added userId as a prop
         <div className="flex">{renderStars()}</div>
       </div>
 
-      <p className="text-base text-green-600 font-medium">In stock</p>
+      <p className="text-base text-green-600 font-medium">Available</p>
       <p className="font-medium text-lg">
-        <span className="font-normal">Colors:</span> {productInfo.color}
+        <span className="font-normal">Service:</span> {productInfo.color}
       </p>
       <button
         onClick={() =>

@@ -38,7 +38,7 @@ const BannerBottom = () => {
               </g>
             </svg>
           </span>
-          <p className="text-lightText text-base">Two years warranty</p>
+          <p style={{paddingLeft:'10px'}} className="text-lightText text-base"> 24/7 Availabilty </p>
         </div>
         <div className="flex md:w-auto items-center gap-2 w-72 shadow-sm hover:shadow-md duration-300">
           <span className="text-5xl text-center w-10 ml-1 text-orange-500">
@@ -53,9 +53,9 @@ const BannerBottom = () => {
             </svg>
           </span>
           <p className="text-xl text-lightText text-base">
-            Free shipping <br />{" "}
+            Free Production <br />{" "}
             <span className="text-xs text-lightText text-base">
-              Free Shipping World Wide
+              {/* Free Shipping World Wide */}
             </span>
           </p>
         </div>
@@ -91,7 +91,7 @@ const BannerBottom = () => {
               ></path>
             </svg>
           </span>
-          <p className="text-lightText text-base">Return policy in 30 days</p>
+          <p className="text-lightText text-base">Available for Emergency</p>
         </div>
       </div>
     </div>

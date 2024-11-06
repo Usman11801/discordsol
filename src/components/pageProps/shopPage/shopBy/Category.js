@@ -15,12 +15,12 @@ const Category = () => {
     {
       _id: 9007,
       title: "Encre",
-      name: "LED",
+      name: "Mobile Application",
     },
     {
       _id: 9008,
       title: "Ruban",
-      name: "Keyboards",
+      name: "Web Application",
     },
   ];
 
@@ -44,7 +44,7 @@ const Category = () => {
 
   return (
     <div className="w-full">
-      <NavTitle title="New Arrived" icons={true} />
+      <NavTitle title="Software Services" icons={true} />
       <div>
         <ul className="flex flex-col gap-4 text-sm lg:text-base text-[#767676]">
           {category.map((item) => (

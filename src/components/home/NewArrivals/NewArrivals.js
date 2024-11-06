@@ -48,15 +48,15 @@ const NewArrivals = () => {
   };
   return (
     <div className="w-full pb-16">
-      <Heading heading="New Arrivals" />
+      <Heading heading="Digital Marketing Services" />
       <Slider {...settings}>
         <div className="px-2">
           <Product
             _id="100001"
             img={newArrOne}
-            productName="Classic earbirds"
-            price="5.00"
-            color="Green"
+            productName="Social Media Management"
+            price="10 - 15 /hr"
+            color="Managing and creating content for platforms like Instagram, Facebook, LinkedIn, and Twitter, which includes strategy, scheduling, engagement, and performance reporting."
             badge={true}
             des="Earbirds with two mic and quality sound with the care of you ear health"
           />
@@ -65,9 +65,9 @@ const NewArrivals = () => {
           <Product
             _id="100002"
             img={newArrTwo}
-            productName="Quad mic earbirds"
-            price="8.00"
-            color="White"
+            productName="Search Engine Optimization (SEO)"
+            price="10 - 20 /hr"
+            color="Improving website rankings on search engines "
             badge={true}
             des="Earbirds with Quad mic and quality sound with the care of you ear health and good call experiance"
           />
@@ -76,9 +76,9 @@ const NewArrivals = () => {
           <Product
             _id="100003"
             img={newArrThree}
-            productName="Head phones"
-            price="6.00"
-            color="White"
+            productName="Content Marketing"
+            price="30 - 40 /hr"
+            color="Creating and promoting high-quality content (blog posts, articles, videos) that aligns with the brand’s goals and SEO strategy."
             badge={true}
             des="Headphones with excellent mic and quality sound with the care of you ear health and good call experiance"
           />
@@ -87,9 +87,9 @@ const NewArrivals = () => {
           <Product
             _id="100004"
             img={newArrFour}
-            productName="Handsfree"
-            price="2.00"
-            color="grey"
+            productName="Email Marketing"
+            price="15 - 30 /hr"
+            color="Developing email campaigns, including newsletters, automations, and A/B testing, focused on increasing customer engagement and conversions."
             badge={false}
             des="Handsfree with excellent mic and quality sound with the care of you ear health and good call experiance"
           />
@@ -98,9 +98,9 @@ const NewArrivals = () => {
           <Product
             _id="100005"
             img={newArrTwo}
-            productName="Quad mic earbirds"
-            price="8.00"
-            color="white"
+            productName="Pay-Per-Click (PPC) Advertising Management"
+            price="10 - 25 /hr"
+            color="Managing ads "
             badge={false}
             des="Earbirds with Quad mic and quality sound with the care of you ear health and good call experiance"
           />

@@ -33,7 +33,7 @@ const Footer = () => {
   const handleCategoryClick = (category) => {
     navigate({
       pathname: "/shop",
-      search: `?category=${category}`, // Add query param
+      // search: `?category=${category}`, 
     });
   };
 
@@ -41,11 +41,10 @@ const Footer = () => {
     <div className="w-full bg-[#F5F5F3] py-20">
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 px-4 gap-10">
         <div className="col-span-2">
-          <FooterListTitle title="More about DiscordSolutions Electronics Shop" />
+          <FooterListTitle title="More about DiscordSolutions" />
           <div className="flex flex-col gap-6">
             <p className="text-base w-full xl:w-[80%]">
-              HyperSound Electronics offers premium tech accessories, including advanced gaming mice, ergonomic keyboards, and high-quality earbuds and handsfree devices. Experience top-tier performance and sleek design with every product.
-            </p>
+            where innovative digital solutions meet seamless user experiences. We specialize in mobile and web application development and digital marketing. Our team of experienced developers utilizes cutting-edge technologies. In digital marketing, we offer strategic, data-driven solutions to enhance brand presence, engage audiences, and drive results. With a commitment to quality and innovation, we're here to help you achieve success in the digital world.</p>
             <ul className="flex items-center gap-2">
               {/* Social Media Icons */}
               <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
@@ -68,7 +67,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <FooterListTitle title="Shop" />
+          <FooterListTitle title="Services" />
           <ul className="flex flex-col gap-2">
             <li
               onClick={() => handleCategoryClick("Keyboards")}
@@ -80,25 +79,25 @@ const Footer = () => {
               onClick={() => handleCategoryClick("Mouse")}
               className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
             >
-              Mouse
+              Software Services
             </li>
             <li
               onClick={() => handleCategoryClick("Handsfree")}
               className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
             >
-              Handsfree
+              {/* Handsfree */}
             </li>
             <li
               onClick={() => handleCategoryClick("Headphones")}
               className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
             >
-              Headphones
+              {/* Headphones */}
             </li>
             <li
               onClick={() => handleCategoryClick("Earbuds")}
               className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300"
             >
-              Earbuds
+              Digital Marketing Services
             </li>
           </ul>
         </div>

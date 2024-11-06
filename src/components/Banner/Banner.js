@@ -152,31 +152,27 @@ const Banner = () => {
   const slides = [
     {
       imgSrc: bannerImgOne,
-      text: "Enhance Your Experiance Experience with us",
-      Subtext:
-        "Explore our premium products and consumables for exceptional results",
-      buttonLink: "/shop",
-      buttonText: "Shop Now",
+      text: "Elevate Your Digital Presence",
+      Subtext: "Empower your business with our cutting-edge web and mobile solutions",
+      buttonLink: "/services",
+      buttonText: "Our Services",
     },
     {
       imgSrc: bannerImgOne,
-      text: "Quality Products Solutions",
-      Subtext:
-        "Discover new products and consumables designed for professional products needs.",
-      buttonLink: "/shop",
-      buttonText: "Shop Now",
+      text: "Engage & Grow",
+      Subtext: "Boost engagement with our targeted digital marketing strategies",
+      buttonLink: "/services",
+      buttonText: "Our Services",
     },
     {
       imgSrc: bannerImgOne,
-      text: "Efficiency Redefined",
-      Subtext:
-        "Maximize productivity with our advanced products and high-quality consumables. ",
-      buttonLink: "/shop",
-      buttonText: "Shop Now",
+      text: "Innovate with Confidence",
+      Subtext: "Discover high-performance apps designed to scale and succeed",
+      buttonLink: "/services",
+      buttonText: "Our Services",
     },
-
-    // Add more slides as needed
   ];
+  
   return (
     <div className="w-full bg-white">
       <Slider {...settings}>

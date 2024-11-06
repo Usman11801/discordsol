@@ -15,22 +15,22 @@ const Brand = () => {
     {
       _id: 900,
       title: "Pantum",
-      name: "Headphones",
+      name: "Social Media Management",
     },
     {
       _id: 901,
       title: "Hp",
-      name: "Earbuds",
+      name: "Search Engine Optimization (SEO)",
     },
     {
       _id: 902,
       title: "Epson",
-      name: "Mouse",
+      name: "Email Marketing",
     },
     {
       _id: 903,
       title: "Ricoh",
-      name: "Handsfree",
+      name: "Pay-Per-Click (PPC) Advertising Management",
     },
     // {
     //   _id: 904,

@@ -19,15 +19,16 @@ const Sale = () => {
         <div className="text-left h-140 md:h-200 lg:h-260 w-full mx-4 ">
           <div className="mx-8">
             <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6">
-              Discord sales
+              Discord Services
             </h2>
-            <p className="text-lg md:text-xl lg:text-2xl mb-6">
+            
+            {/* <p className="text-lg md:text-xl lg:text-2xl mb-6">
               Up to{" "}
               <span className="text-3xl md:text-3xl lg:text-3xl font-bold">
                 30%
               </span>{" "}
               sales for USB{" "}
-            </p>
+            </p> */}
             <div className=" mb-8">
               <ShopNow />
             </div>
@@ -38,7 +39,7 @@ const Sale = () => {
       <div className="w-full md:w-2/3 lg:w-1/2 h-auto flex flex-col gap-4 lg:gap-10">
         <div className="h-1/2 w-full">
           <Link to="/shop">
-            <Image className="h-full w-full object-cover" imgSrc={discount} />
+            <Image className="h-full w-full object-cover" imgSrc={saleImgTwo} />
           </Link>
         </div>
         <div className="h-1/2 w-full">
