@@ -126,6 +126,12 @@ const Footer = () => {
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               <p>+1 (815) 687‑5280</p>
             </li>
+             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+              <p><span>Adress:</span>House No. 200 P Model Town</p>
+            </li>
+             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+              <Link to="/terms-and-refund-policy" style={{color:"#007bff"}}>Terms and Refund policy</Link>
+            </li>
           </ul>
         </div>
 
