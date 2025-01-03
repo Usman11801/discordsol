@@ -26,7 +26,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-import TermsAndConditions from "./pages/Termsandconditions/Terms";
+import PrivacyPolicy from "./pages/Termsandconditions/PrivacyPolicy.js";
+import RefundPolicy from "./pages/Termsandconditions/RefundPolicy.js";
+import TermsAndConditions from "./pages/Termsandconditions/TermsAndConditions.js";
 
 const stripePromise = loadStripe("pk_test_51NBYcKFAJ57FpFjHclFsyfkGvfPWze3dCnuUbsZV6QilKhLnpEYYqAfndJA1O06M1huDfTeBJyAa73mvA9TPA6lr00wh2IRKWY"); // Replace with your public key
 
@@ -74,7 +76,9 @@ const router = createBrowserRouter(
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
-            <Route path="/terms-and-refund-policy" element={<TermsAndConditions />}></Route>
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />}></Route>
+            <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
+            <Route path="/refund-policy" element={<RefundPolicy />}></Route>
 
     </Route>
   )

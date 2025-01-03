@@ -124,14 +124,29 @@ const Footer = () => {
               </a>
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              <p>+1 (815) 687‑5280</p>
+              <p>+92333442712</p>
             </li>
              <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               <p><span>Adress:</span>House No. 200 P Model Town</p>
             </li>
-             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              <Link to="/terms-and-refund-policy" style={{color:"#007bff"}}>Terms and Refund policy</Link>
-            </li>
+            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+  <a href="/terms-and-conditions" style={{color:"#007bff"}} target="_blank" rel="noopener noreferrer">
+    Terms and Conditions
+  </a>
+</li>
+<li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+  <a href="/privacy-policy" style={{color:"#007bff"}} target="_blank" rel="noopener noreferrer">
+    Privacy Policy
+  </a>
+</li>
+<li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+  <a href="/refund-policy" style={{color:"#007bff"}} target="_blank" rel="noopener noreferrer">
+    Refund Policy
+  </a>
+</li>
+
+            {/* <Link to="/privacy-policy" style={{color:"#007bff"}}>Privacy Policy</Link>
+              <Link to="/refund-policy" style={{color:"#007bff"}}>Refund policy</Link> */}
           </ul>
         </div>
 
