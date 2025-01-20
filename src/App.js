@@ -29,6 +29,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import PrivacyPolicy from "./pages/Termsandconditions/PrivacyPolicy.js";
 import RefundPolicy from "./pages/Termsandconditions/RefundPolicy.js";
 import TermsAndConditions from "./pages/Termsandconditions/TermsAndConditions.js";
+import FAQPage from "./pages/FAQ/Faq.js";
 
 const stripePromise = loadStripe("pk_test_51NBYcKFAJ57FpFjHclFsyfkGvfPWze3dCnuUbsZV6QilKhLnpEYYqAfndJA1O06M1huDfTeBJyAa73mvA9TPA6lr00wh2IRKWY"); // Replace with your public key
 
@@ -73,6 +74,8 @@ const router = createBrowserRouter(
         <Route path="/product/:_id" element={<ProductDetails />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/paymentgateway" element={<Payment />}></Route>
+        <Route path="/faq" element={<FAQPage/>}></Route>
+
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
