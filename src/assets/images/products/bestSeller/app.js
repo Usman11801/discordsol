@@ -19,7 +19,7 @@ const CheckoutForm = () => {
       return;
     }
 
-    const { error: backendError, clientSecret } = await fetch('http://localhost:5000/create-payment-intent', {
+    const { error: backendError, clientSecret } = await fetch('http://localhost:8080/create-payment-intent', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ amount: parseFloat(amount) }),

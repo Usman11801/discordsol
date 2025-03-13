@@ -19,7 +19,7 @@ import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import Journal from "./pages/Journal/Journal";
 import Offer from "./pages/Offer/Offer";
-import Payment from "./pages/payment/Payment";
+import Payment from "./pages/PaymentAlflah.js";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Shop from "./pages/Shop/Shop";
 import { ToastContainer } from "react-toastify";
@@ -30,6 +30,7 @@ import PrivacyPolicy from "./pages/Termsandconditions/PrivacyPolicy.js";
 import RefundPolicy from "./pages/Termsandconditions/RefundPolicy.js";
 import TermsAndConditions from "./pages/Termsandconditions/TermsAndConditions.js";
 import FAQPage from "./pages/FAQ/Faq.js";
+import PaymentCallback from './components/PaymentCallback';
 
 const stripePromise = loadStripe("pk_test_51NBYcKFAJ57FpFjHclFsyfkGvfPWze3dCnuUbsZV6QilKhLnpEYYqAfndJA1O06M1huDfTeBJyAa73mvA9TPA6lr00wh2IRKWY"); // Replace with your public key
 
@@ -75,13 +76,14 @@ const router = createBrowserRouter(
         <Route path="/cart" element={<Cart />}></Route>
         <Route path="/paymentgateway" element={<Payment />}></Route>
         <Route path="/faq" element={<FAQPage/>}></Route>
-
+        <Route path="/payment-callback" element={<PaymentCallback />} />
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
             <Route path="/terms-and-conditions" element={<TermsAndConditions />}></Route>
             <Route path="/privacy-policy" element={<PrivacyPolicy />}></Route>
             <Route path="/refund-policy" element={<RefundPolicy />}></Route>
+            <Route path="/payment" element={<Payment />}></Route>
 
     </Route>
   )

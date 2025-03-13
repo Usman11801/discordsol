@@ -55,7 +55,7 @@ const NewArrivals = () => {
             _id="100001"
             img={newArrOne}
             productName="Social Media Management"
-            price="100 - 150 /hr"
+            price="5000 - 7500"
             color="Managing and creating content for platforms like Instagram, Facebook, LinkedIn, and Twitter, which includes strategy, scheduling, engagement, and performance reporting."
             badge={true}
             des="Earbirds with two mic and quality sound with the care of you ear health"
@@ -66,7 +66,7 @@ const NewArrivals = () => {
             _id="100002"
             img={newArrTwo}
             productName="Search Engine Optimization (SEO)"
-            price="100 - 200 /hr"
+            price="7500 - 10000"
             color="Improving website rankings on search engines "
             badge={true}
             des="Earbirds with Quad mic and quality sound with the care of you ear health and good call experiance"
@@ -77,8 +77,8 @@ const NewArrivals = () => {
             _id="100003"
             img={newArrThree}
             productName="Content Marketing"
-            price="300 - 400 /hr"
-            color="Creating and promoting high-quality content (blog posts, articles, videos) that aligns with the brand’s goals and SEO strategy."
+            price="10000 - 12500"
+            color="Creating and promoting high-quality content (blog posts, articles, videos) that aligns with the brand's goals and SEO strategy."
             badge={true}
             des="Headphones with excellent mic and quality sound with the care of you ear health and good call experiance"
           />
@@ -88,7 +88,7 @@ const NewArrivals = () => {
             _id="100004"
             img={newArrFour}
             productName="Email Marketing"
-            price="150 - 300 /hr"
+            price="12500 - 15000"
             color="Developing email campaigns, including newsletters, automations, and A/B testing, focused on increasing customer engagement and conversions."
             badge={false}
             des="Handsfree with excellent mic and quality sound with the care of you ear health and good call experiance"
@@ -99,7 +99,7 @@ const NewArrivals = () => {
             _id="100005"
             img={newArrTwo}
             productName="Pay-Per-Click (PPC) Advertising Management"
-            price="100 - 250 /hr"
+            price="5000 - 15000"
             color="Managing ads "
             badge={false}
             des="Earbirds with Quad mic and quality sound with the care of you ear health and good call experiance"
