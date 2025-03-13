@@ -116,11 +116,11 @@ const Footer = () => {
                 }}
                 onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")}
                 onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=support@discordsolutions.co"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=support@discordsolutions.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                support@discordsolutions.co
+                support@discordsolutions.com
               </a>
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">

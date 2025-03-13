@@ -185,13 +185,13 @@ const TermsAndConditions = () => {
       <section style={sectionStyle}>
         <h2 style={sectionTitleStyle}>20. Contact Us</h2>
         <p>
-          If you have any questions regarding these terms, please contact us at <strong>support@discordsolutions.com</strong>.
+          If you have any questions regarding these terms, please contact us at <strong>support@discordsolutions.comm</strong>.
         </p>
       </section>
 
       <footer style={footerStyle}>
         <p>
-          Have questions about our Terms? Reach out to us at <strong>support@discordsolutions.com</strong>.<br />
+          Have questions about our Terms? Reach out to us at <strong>support@discordsolutions.comm</strong>.<br />
           Thank you for choosing <em>Discord Solutions</em>!
         </p>
       </footer>

@@ -78,7 +78,7 @@ const Contact = () => {
      }}
      onMouseEnter={e => e.currentTarget.style.textDecoration = 'underline'}
      onMouseLeave={e => e.currentTarget.style.textDecoration = 'none'}
-       href="https://mail.google.com/mail/?view=cm&fs=1&to=support@discordsolutions.co" target="_blank" rel="noopener noreferrer">support@discordsolutions.co</a></p>
+       href="https://mail.google.com/mail/?view=cm&fs=1&to=support@discordsolutions.com" target="_blank" rel="noopener noreferrer">support@discordsolutions.com</a></p>
 
       <p style={{ 
         

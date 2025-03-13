@@ -153,7 +153,7 @@ const RefundPolicy = () => {
 
       <footer style={footerStyle}>
         <p>
-          For more information on our Refund Policy, please contact us at <strong>support@discordsolutions.com</strong>.
+          For more information on our Refund Policy, please contact us at <strong>support@discordsolutions.comm</strong>.
         </p>
       </footer>
     </div>

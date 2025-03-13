@@ -107,7 +107,7 @@ const PrivacyPolicy = () => {
       <section style={sectionStyle}>
         <h2 style={sectionTitleStyle}>9. Contact Information</h2>
         <p>
-          If you have questions about our privacy practices, please contact us at <strong>support@discordsolutions.com</strong>.
+          If you have questions about our privacy practices, please contact us at <strong>support@discordsolutions.comm</strong>.
         </p>
       </section>
 
@@ -148,7 +148,7 @@ const PrivacyPolicy = () => {
 
       <footer style={footerStyle}>
         <p>
-          Questions about our Privacy Policy? Contact us at <strong>support@discordsolutions.com</strong>.
+          Questions about our Privacy Policy? Contact us at <strong>support@discordsolutions.comm</strong>.
         </p>
       </footer>
     </div>

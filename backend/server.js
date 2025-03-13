@@ -263,7 +263,7 @@ app.post('/api/process-transaction', async (req, res) => {
             HS_RequestHash: "",
             HS_IsRedirectionRequest: "1",
             HS_ChannelId: "1001",
-            HS_ReturnURL: "https://www.discordsolutions.co/",
+            HS_ReturnURL: "https://www.discordsolutions.com/",
             HS_MerchantId: HS_MERCHANT_ID,
             HS_StoreId: HS_STORE_ID,
             HS_MerchantHash: HS_MERCHANT_HASH,
