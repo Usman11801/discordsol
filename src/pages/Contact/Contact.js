@@ -88,7 +88,7 @@ const Contact = () => {
        fontWeight: '500',
      }}>
          <span style={{fontSize:'1.1rem', fontWeight:'700',paddingRight:'6px',color:'black'}}> Phone:</span> 
-         +1 (815) 687‑5280</p>
+         +1 (845) 827-9543</p>
 
      </div>
       {successMsg ? (

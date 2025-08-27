@@ -19,10 +19,11 @@ const ContactPayment = () => {
 
   const contactInfo = {
     email: "support@discordsolutions.com",
-    phone: "+92333442712",
-    whatsapp: "+92333442712",
+    phone: "+1 (845) 827-9543",
+    whatsapp: "+1 (845) 827-9543",
     linkedin: "https://www.linkedin.com/in/nouman-ahmad-a16aa31b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    address: "House No. 200 P Model Town"
+    facebook: "https://www.facebook.com/share/18JN1hxEZg/",
+    address: "Cheyenne, Wyoming 82009, US"
   };
 
   return (
@@ -148,6 +149,27 @@ const ContactPayment = () => {
                 <p className="text-sm text-gray-600">Professional networking and updates</p>
               </div>
             </div>
+
+            {/* Facebook */}
+            <div className="flex items-center p-4 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition-shadow">
+              <div className="p-3 bg-blue-100 rounded-full mr-4">
+                <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-800">Facebook</h3>
+                <a 
+                  href={contactInfo.facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-600 hover:text-blue-800 transition-colors"
+                >
+                  Follow us on Facebook
+                </a>
+                <p className="text-sm text-gray-600">Stay updated with our latest news and projects</p>
+              </div>
+            </div>
           </motion.div>
 
           {/* Process Information */}
@@ -228,6 +250,18 @@ const ContactPayment = () => {
           >
             <FaLinkedin />
             Connect on LinkedIn
+          </a>
+          
+          <a 
+            href={contactInfo.facebook}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#1877F2] text-white rounded-md hover:bg-[#166FE5] transition-colors duration-300"
+          >
+            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            Follow on Facebook
           </a>
         </motion.div>
 

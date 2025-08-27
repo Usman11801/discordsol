@@ -52,7 +52,7 @@ const Footer = () => {
                   <FaYoutube />
                 </li>
               </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+              <a href="https://www.facebook.com/share/18JN1hxEZg/" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaFacebook />
                 </li>
@@ -124,10 +124,10 @@ const Footer = () => {
               </a>
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              <p>+92333442712</p>
+              <p>+1 (845) 827-9543</p>
             </li>
              <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              <p><span>Adress:</span>House No. 200 P Model Town</p>
+              <p><span>Address:</span> Cheyenne, Wyoming 82009, US</p>
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
   <a href="/terms-and-conditions" style={{color:"#007bff"}} target="_blank" rel="noopener noreferrer">
