@@ -129,7 +129,7 @@ const HeaderBottom = () => {
                         <p className="text-sm">
                           Price:{" "}
                           <span className="text-primeColor font-semibold">
-                            Rs {item.price}
+                            ${item.price}
                           </span>
                         </p>
                       </div>

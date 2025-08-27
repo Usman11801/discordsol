@@ -88,12 +88,12 @@ const ProductInfo = ({ productInfo }) => { // Added userId as a prop
     <div className="flex flex-col gap-5">
       <h2 className="text-4xl font-semibold">{productInfo.productName}</h2>
       <p className="text-2xl font-semibold">
-        {productInfo.price} Dt
+        ${productInfo.price}
         <span className="text-xl font-semibold line-through ml-2">
-          {parseFloat(productInfo.price) + 8}
+          ${(parseFloat(productInfo.price) + 0.10).toFixed(2)}
         </span>
         <span className="text-xs ml-2 inline-flex items-center px-3 py-1 rounded-full bg-green-600 text-white">
-          Save 8.00
+          Save $0.10
         </span>
       </p>
       <hr />

@@ -57,7 +57,7 @@ const Footer = () => {
                   <FaFacebook />
                 </li>
               </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+              <a href="https://www.linkedin.com/in/nouman-ahmad-a16aa31b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaLinkedin />
                 </li>

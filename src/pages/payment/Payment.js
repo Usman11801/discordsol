@@ -88,7 +88,7 @@ const Payment = () => {
             className="w-52 h-10 bg-primeColor text-white text-lg mt-4 hover:bg-black duration-300"
             disabled={!stripe || isProcessing}
           >
-            {isProcessing ? "Processing..." : `Pay Rs ${subtotal.toFixed(2)}`} {/* Display total price */}
+            {isProcessing ? "Processing..." : `Pay $${subtotal.toFixed(2)}`} {/* Display total price */}
           </button>
           
           {/* Error Popup */}

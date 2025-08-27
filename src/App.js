@@ -16,6 +16,7 @@ import SignIn from "./pages/Account/SignIn";
 import SignUp from "./pages/Account/SignUp";
 import Cart from "./pages/Cart/Cart";
 import Contact from "./pages/Contact/Contact";
+import ContactPayment from "./pages/ContactPayment/ContactPayment";
 import Home from "./pages/Home/Home";
 import Journal from "./pages/Journal/Journal";
 import Offer from "./pages/Offer/Offer";
@@ -74,6 +75,7 @@ const router = createBrowserRouter(
         <Route path="/category/:category" element={<Offer />}></Route>
         <Route path="/product/:_id" element={<ProductDetails />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
+        <Route path="/contact-payment" element={<ContactPayment />}></Route>
         <Route path="/paymentgateway" element={<Payment />}></Route>
         <Route path="/faq" element={<FAQPage/>}></Route>
         <Route path="/payment-callback" element={<PaymentCallback />} />

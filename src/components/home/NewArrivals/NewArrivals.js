@@ -55,7 +55,7 @@ const NewArrivals = () => {
             _id="100001"
             img={newArrOne}
             productName="Social Media Management"
-            price="5000 - 7500"
+            price="59.88 - 89.82"
             color="Managing and creating content for platforms like Instagram, Facebook, LinkedIn, and Twitter, which includes strategy, scheduling, engagement, and performance reporting."
             badge={true}
             des="Earbirds with two mic and quality sound with the care of you ear health"
@@ -66,7 +66,7 @@ const NewArrivals = () => {
             _id="100002"
             img={newArrTwo}
             productName="Search Engine Optimization (SEO)"
-            price="7500 - 10000"
+            price="89.82 - 119.76"
             color="Improving website rankings on search engines "
             badge={true}
             des="Earbirds with Quad mic and quality sound with the care of you ear health and good call experiance"
@@ -77,7 +77,7 @@ const NewArrivals = () => {
             _id="100003"
             img={newArrThree}
             productName="Content Marketing"
-            price="10000 - 12500"
+            price="119.76 - 149.70"
             color="Creating and promoting high-quality content (blog posts, articles, videos) that aligns with the brand's goals and SEO strategy."
             badge={true}
             des="Headphones with excellent mic and quality sound with the care of you ear health and good call experiance"
@@ -88,7 +88,7 @@ const NewArrivals = () => {
             _id="100004"
             img={newArrFour}
             productName="Email Marketing"
-            price="12500 - 15000"
+            price="149.70 - 179.64"
             color="Developing email campaigns, including newsletters, automations, and A/B testing, focused on increasing customer engagement and conversions."
             badge={false}
             des="Handsfree with excellent mic and quality sound with the care of you ear health and good call experiance"
@@ -99,7 +99,7 @@ const NewArrivals = () => {
             _id="100005"
             img={newArrTwo}
             productName="Pay-Per-Click (PPC) Advertising Management"
-            price="5000 - 15000"
+            price="59.88 - 179.64"
             color="Managing ads "
             badge={false}
             des="Earbirds with Quad mic and quality sound with the care of you ear health and good call experiance"

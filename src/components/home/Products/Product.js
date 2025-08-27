@@ -103,7 +103,7 @@ const Product = (props) => {
         </div>
         <div>
           <p className="text-[#767676] text-[14px]">{props.color}</p>
-          <p style={{textAlign:'end'}} className="text-[#767676] text-[14px]">Rs {props.price}</p>
+          <p style={{textAlign:'end'}} className="text-[#767676] text-[14px]">${props.price}</p>
         </div>
       </div>
     </div>
