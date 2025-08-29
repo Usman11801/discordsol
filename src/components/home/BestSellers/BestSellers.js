@@ -17,7 +17,7 @@ const BestSellers = () => {
           _id="1011"
           img={bestSellerOne}
           productName="Reactjs"
-          price="59.88 - 95.81 /hr"
+          price="24.99 - 32.50 /hr"
           color="Frontend development with interactive UI"
           badge={true}
           des="Headphones with excellent mic and quality sound with the care of you ear health and good call experiance"
@@ -26,7 +26,7 @@ const BestSellers = () => {
           _id="1012"
           img={bestSellerTwo}
           productName="Nodejs"
-          price="95.81 - 143.71 /hr"
+          price="29.99 - 35.99 /hr"
           color="Backend development and RESTful APIs"
           badge={false}
           des="Mice are known to have a pointed snout, small rounded ears, a body-length scaly tail, and a high breeding rate. The best known mouse species is the common house mouse"
@@ -35,7 +35,7 @@ const BestSellers = () => {
           _id="1013"
           img={bestSellerThree}
           productName="Angular"
-          price="71.86 - 107.78 /hr"
+          price="26.99 - 32.50 /hr"
           color="	Frontend with comprehensive TypeScript support"
           badge={true}
           des="An input device that allows you to type letters, numbers, and symbols into your computer or other electronic device. It usually has a set of keys arranged in a specific layout, such as QWERTY or DVORAK"
@@ -44,7 +44,7 @@ const BestSellers = () => {
           _id="1014"
           img={bestSellerFour}
           productName="Nestjs"
-          price="119.76 - 179.64 /hr"
+          price="36.99 - 44.99 /hr"
           color="Black"
           badge={false}
           des="A set of connectivity specifications developed in collaboration with industry leaders"

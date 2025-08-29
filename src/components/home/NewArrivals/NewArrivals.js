@@ -55,7 +55,7 @@ const NewArrivals = () => {
             _id="100001"
             img={newArrOne}
             productName="Social Media Management"
-            price="59.88 - 89.82"
+            price="24.99 - 32.50"
             color="Managing and creating content for platforms like Instagram, Facebook, LinkedIn, and Twitter, which includes strategy, scheduling, engagement, and performance reporting."
             badge={true}
             des="Earbirds with two mic and quality sound with the care of you ear health"
@@ -66,7 +66,7 @@ const NewArrivals = () => {
             _id="100002"
             img={newArrTwo}
             productName="Search Engine Optimization (SEO)"
-            price="89.82 - 119.76"
+            price="29.99 - 36.99"
             color="Improving website rankings on search engines "
             badge={true}
             des="Earbirds with Quad mic and quality sound with the care of you ear health and good call experiance"
@@ -77,7 +77,7 @@ const NewArrivals = () => {
             _id="100003"
             img={newArrThree}
             productName="Content Marketing"
-            price="119.76 - 149.70"
+            price="34.99 - 42.99"
             color="Creating and promoting high-quality content (blog posts, articles, videos) that aligns with the brand's goals and SEO strategy."
             badge={true}
             des="Headphones with excellent mic and quality sound with the care of you ear health and good call experiance"
